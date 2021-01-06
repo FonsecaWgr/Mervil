@@ -1,0 +1,225 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    background-image: url(../img/fundo1.jpg);
+    background-size: cover;
+}
+
+/*HEADER*/
+.navbar {
+    background-color: black;
+    height: 90px;
+}
+
+.navbar-menu {
+    background-color: black;
+}
+
+.navbar-item {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+/*CAROUSEL*/
+.item {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.coverimg {
+    object-fit: cover;
+}
+
+/*MVV*/
+.mvv{
+    margin-top: -30px;
+    margin-bottom: 120px;
+}
+
+.altura-mvv {
+    height: 400px;
+}
+
+/*SERVICOS*/
+.margin-servicos {
+    margin-top: 200px;
+}
+
+/*TIMELINE*/
+section {
+    padding: 100px 0;
+  }
+  
+  .timeline {
+    position: relative;
+  }
+  .timeline::before {
+    content: '';
+    background: #C5CAE9;
+    width: 5px;
+    height: 85%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    float: right;
+    padding: 40px 30px 10px 30px;
+  }
+  .timeline-item:nth-child(even) .timeline-content .date {
+    right: auto;
+    left: 0;
+  }
+  .timeline-item:nth-child(even) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+  .timeline-item::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background: #f5f5f5;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+  }
+  .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #f5f5f5;
+  }
+  
+  
+  .date {
+    background: #000000;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .timeline::before {
+      left: 50px;
+    }
+    .timeline .timeline-content {
+      max-width: 100%;
+      width: auto;
+      margin-left: 70px;
+    }
+    .timeline .timeline-item:nth-child(even) .timeline-content {
+      float: none;
+    }
+    .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      width: 0;
+      height: 0;
+      top: 30px;
+      left: -15px;
+      border-width: 10px 15px 10px 0;
+      border-color: transparent #f5f5f5 transparent transparent;
+    }
+  }
+
+  /*MAPA*/
+  #mapa {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+div.estados {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    height: 400px;
+}
+
+div.estados p {
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 15%;
+    margin-top: -20px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #dbdbdb;
+}
+
+#svg-map path {
+    fill: rgb(209, 209, 209);
+  }
+  
+  #svg-map .mt path {
+    fill: #243665;
+  }
+
+  #svg-map text {
+    fill: #fff;
+    font: 12px Arial-BoldMT, sans-serif;
+    cursor: pointer
+  }
+  
+  #svg-map a {
+    text-decoration: none
+  }
+  
+  #svg-map a:hover {
+    cursor: pointer;
+    text-decoration: none
+  }
+  
+  #svg-map .mt  path:hover {
+    fill: #8fa6df;
+  }
+  
+  #svg-map .circle {
+    fill: rgb(26, 26, 26);
+  }
+  
+  #svg-map .df .circle  {
+    fill: rgb(209, 209, 209);
+  }
+
+  #svg-map a:hover .circle {
+  
+  }
+  
+/*FOOTER*/
+  .card {
+    background-color: black;
+}
